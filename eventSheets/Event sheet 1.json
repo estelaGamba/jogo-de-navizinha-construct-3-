@@ -12,6 +12,16 @@
 			"sid": 174094471747138
 		},
 		{
+			"eventType": "variable",
+			"name": "navesQueEscaparam",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 533760895833182
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -86,6 +96,15 @@
 						"x": "0",
 						"y": "PlanoDeFundoEmBlocos.Y+1"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "nave2",
+					"sid": 989098291193374,
+					"parameters": {
+						"x": "nave2.X",
+						"y": "nave2.Y+1"
+					}
 				}
 			],
 			"sid": 846742353697839
@@ -157,6 +176,138 @@
 				}
 			],
 			"sid": 218334852000692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 908922368010191,
+					"parameters": {
+						"interval-seconds": "2.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "gerador",
+					"sid": 291715082497009,
+					"parameters": {
+						"object": "nave2",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 567333515509051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 112450780654439,
+					"parameters": {
+						"key": 90
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 152942112383742,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "nave",
+					"sid": 498232059960985,
+					"parameters": {
+						"object": "tiro",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "nave",
+					"sid": 807858136799913,
+					"parameters": {
+						"object": "tiro",
+						"layer": "0",
+						"image-point": "2",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 357757683578106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "nave2",
+					"sid": 458914749710561,
+					"parameters": {
+						"object": "tiro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 155652886278019
+				},
+				{
+					"id": "destroy",
+					"objectClass": "tiro",
+					"sid": 994236235788703
+				}
+			],
+			"sid": 438677096281045
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "nave2",
+					"sid": 413064669158758,
+					"parameters": {
+						"object": "sensor"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 450279592481345
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 520117425936057,
+					"parameters": {
+						"variable": "navesQueEscaparam",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 981790623569975
 		}
 	],
 	"sid": 442525077615115

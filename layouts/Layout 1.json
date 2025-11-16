@@ -144,8 +144,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 58.56977044732969,
-						"y": 116.28234248139022,
+						"x": 129.53754348281845,
+						"y": 116.76511644761804,
 						"width": 3,
 						"height": 10,
 						"originX": 0.3333333333333333,
@@ -243,7 +243,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 50,
+								"magnitude": 40,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -253,12 +253,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 56.10380122323974,
-						"y": 0.48277396622781055,
+						"x": 60,
+						"y": 6,
 						"width": 8,
 						"height": 8,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -292,6 +292,99 @@
 						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "nave",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"sid": 725314913530029,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 29.82048520754794,
+						"y": 148.94889262224584,
+						"width": 18,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5333333333333333,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "nave2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"sid": 489744302492367,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"RestritoAoLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Senóide": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"DestruirForaDoLayout": {
+							"properties": {}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 489744302492367,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 152.39870804045628,
+						"y": 117.1561508178711,
+						"width": 18,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.4666666666666667,
 						"color": [
 							1,
 							1,
@@ -338,28 +431,48 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "nave",
+					"type": "Texto",
 					"properties": {
+						"text": "Texto",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
 						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"read-aloud": false
 					},
-					"uid": 2,
-					"sid": 725314913530029,
+					"uid": 8,
+					"sid": 971422402228047,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 971422402228047,
+						"expanded": true
+					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 29.82048520754794,
-						"y": 148.94889262224584,
-						"width": 18,
-						"height": 15,
-						"originX": 0.5,
-						"originY": 0.5333333333333333,
+						"x": 2.4973403778261485,
+						"y": 4.911242049889793,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
