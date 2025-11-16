@@ -1,27 +1,5 @@
 {
 	"name": "Folha de eventos 1",
-	"events": [
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-any-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 436466579981619
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 141666089951056,
-					"parameters": {
-						"layout": "Layout 1"
-					}
-				}
-			],
-			"sid": 411039296989259
-		}
-	],
+	"events": [],
 	"sid": 794640557933441
 }

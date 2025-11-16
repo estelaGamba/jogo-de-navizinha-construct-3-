@@ -163,7 +163,7 @@
 				{
 					"type": "jogador",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -224,7 +224,7 @@
 				{
 					"type": "gerador",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -433,7 +433,7 @@
 				{
 					"type": "shipsDestruidas",
 					"properties": {
-						"text": "score: 0",
+						"text": "ships destroyed: 0",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 6,
@@ -469,10 +469,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 26.636038689216875,
-						"y": 94.22442580203551,
+						"x": 15.29085048286322,
+						"y": 93.01749088646598,
 						"width": 67.23715928735089,
-						"height": 30,
+						"height": 12.378750232684766,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -630,10 +630,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 10.445818863364536,
-						"y": 77.56860032376545,
+						"x": 10.687205846478435,
+						"y": 77.32721334065155,
 						"width": 200,
-						"height": 30,
+						"height": 15.034007046937745,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -649,7 +649,7 @@
 				{
 					"type": "total",
 					"properties": {
-						"text": "Texto",
+						"text": "score: 0",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 6,
@@ -667,7 +667,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},

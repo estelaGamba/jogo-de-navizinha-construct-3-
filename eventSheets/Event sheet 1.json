@@ -117,9 +117,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "total",
-					"sid": 839642229477357,
+					"sid": 843097888408359,
 					"parameters": {
-						"text": "\"total: \" & score - navesQueEscaparam"
+						"text": "\"score: \" & score - navesQueEscaparam"
 					}
 				}
 			],
@@ -272,6 +272,12 @@
 		{
 			"eventType": "comment",
 			"text": "nave inimigas",
+			"text-color": [
+				0.9803921568627451,
+				0.9803921568627451,
+				0.9803921568627451,
+				1
+			],
 			"background-color": [
 				0.6274509803921569,
 				0.054901960784313725,
@@ -314,9 +320,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "shipsDestruidas",
-					"sid": 730660832061365,
+					"sid": 343252005671103,
 					"parameters": {
-						"text": "\"score: \" & score"
+						"text": "\"ships destroyed: \" & score"
 					}
 				}
 			],
@@ -387,25 +393,18 @@
 		{
 			"eventType": "comment",
 			"text": "configurar game over",
+			"text-color": [
+				0.4196078431372549,
+				0.4196078431372549,
+				0.4196078431372549,
+				1
+			],
 			"background-color": [
 				0.9019607843137255,
 				0.7686274509803922,
 				0.9725490196078431,
 				1
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-destroyed",
-					"objectClass": "nave",
-					"sid": 456931564289214
-				}
-			],
-			"actions": [],
-			"sid": 331583964072245,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -491,6 +490,23 @@
 					"sid": 226168317427339
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 798915302878112,
+					"parameters": {
+						"variable": "navesQueEscaparam",
+						"comparison": 0,
+						"value": "20"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 693454529558389
 		}
 	],
 	"sid": 442525077615115
