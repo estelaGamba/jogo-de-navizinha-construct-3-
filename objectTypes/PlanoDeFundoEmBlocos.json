@@ -1,0 +1,29 @@
+{
+	"name": "PlanoDeFundoEmBlocos",
+	"plugin-id": "TiledBg",
+	"sid": 422248132240028,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "wrap",
+			"name": "DarAVolta",
+			"sid": 183089874027608
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 90,
+		"height": 160,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9414572,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

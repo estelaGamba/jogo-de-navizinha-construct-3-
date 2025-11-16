@@ -7,97 +7,46 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite2",
+					"type": "PlanoDeFundoEmBlocos",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
 					},
-					"uid": 8,
-					"sid": 924433694434278,
+					"uid": 12,
+					"sid": 762338950441448,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Wrap": {
+						"DarAVolta": {
 							"properties": {
 								"wrap-to": "layout"
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 120,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
 							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 924433694434278,
+						"sid": 762338950441448,
 						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 90,
-						"y": 0,
-						"width": 90,
-						"height": 160,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"sid": 436509755527327,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Wrap": {
-							"properties": {
-								"wrap-to": "layout"
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 120,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 90,
-						"height": 160,
+						"width": 119.3109586491126,
+						"height": 160.58813276159077,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -111,43 +60,46 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "PlanoDeFundoEmBlocos",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
 					},
 					"uid": 4,
-					"sid": 799990751436518,
+					"sid": 741247472766625,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Wrap": {
+						"DarAVolta": {
 							"properties": {
 								"wrap-to": "layout"
 							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 120,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
 						}
+					},
+					"instanceFolderItem": {
+						"sid": 741247472766625,
+						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 0,
 						"y": -160,
-						"width": 90,
-						"height": 160,
+						"width": 119.3109586491126,
+						"height": 160.58813276159077,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -179,11 +131,11 @@
 						},
 						"Bullet": {
 							"properties": {
-								"speed": 1500,
+								"speed": 0,
 								"acceleration": 0,
-								"gravity": 0,
+								"gravity": -30,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -192,8 +144,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -21.08793398025975,
-						"y": 111.93737678533988,
+						"x": 58.56977044732969,
+						"y": 116.28234248139022,
 						"width": 3,
 						"height": 10,
 						"originX": 0.3333333333333333,

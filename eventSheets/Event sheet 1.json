@@ -38,11 +38,6 @@
 						"x": "48",
 						"y": "152"
 					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "tiro",
-					"sid": 656415788786653
 				}
 			],
 			"sid": 222752076719427
@@ -82,6 +77,15 @@
 						"animation": "\"idle\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "PlanoDeFundoEmBlocos",
+					"sid": 720963978382723,
+					"parameters": {
+						"x": "0",
+						"y": "PlanoDeFundoEmBlocos.Y+1"
+					}
 				}
 			],
 			"sid": 846742353697839
@@ -96,6 +100,15 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 516004240477691,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -121,6 +134,15 @@
 					"parameters": {
 						"key": 37
 					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 105129950157028,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -135,31 +157,6 @@
 				}
 			],
 			"sid": 218334852000692
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Teclado",
-					"sid": 359413104716958,
-					"parameters": {
-						"key": 90
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "nave",
-					"sid": 309649059246665,
-					"parameters": {
-						"animation": "\"atirando\"",
-						"from": "current-frame"
-					}
-				}
-			],
-			"sid": 690748655385033
 		}
 	],
 	"sid": 442525077615115
