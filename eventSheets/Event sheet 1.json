@@ -1,0 +1,166 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 174094471747138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 663833986067668
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "nave",
+					"sid": 956554012787934,
+					"parameters": {
+						"x": "jogador.X",
+						"y": "jogador.Y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "jogador",
+					"sid": 503546112807060,
+					"parameters": {
+						"x": "48",
+						"y": "152"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "tiro",
+					"sid": 656415788786653
+				}
+			],
+			"sid": 222752076719427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 130662352227752
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "nave",
+					"sid": 701632533747232,
+					"parameters": {
+						"x": "jogador.X",
+						"y": "jogador.Y"
+					}
+				},
+				{
+					"id": "scroll-to-object",
+					"objectClass": "System",
+					"sid": 277993254917842,
+					"parameters": {
+						"object": "jogador"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "nave",
+					"sid": 300446103796821,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 846742353697839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 604194071500616,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "nave",
+					"sid": 526603006169127,
+					"parameters": {
+						"animation": "\"dobrando D\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 825744741814595
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 541105274953523,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "nave",
+					"sid": 779662226675435,
+					"parameters": {
+						"animation": "\"dobrando E\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 218334852000692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 359413104716958,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "nave",
+					"sid": 309649059246665,
+					"parameters": {
+						"animation": "\"atirando\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 690748655385033
+		}
+	],
+	"sid": 442525077615115
+}

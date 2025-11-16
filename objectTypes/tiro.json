@@ -1,0 +1,71 @@
+{
+	"name": "tiro",
+	"plugin-id": "Sprite",
+	"sid": 267844245246873,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 107191343332590
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 242089131343013
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3,
+						"height": 10,
+						"originX": 0.3333333333333333,
+						"originY": 0.9,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1664179,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.5,
+								0.3333333333333333,
+								0.1,
+								0.3333333333333333,
+								0.4,
+								0.3333333333333333,
+								0.5,
+								0.3333333333333333,
+								0.5,
+								0.3333333333333333,
+								0.8,
+								0.3333333333333333,
+								0.4,
+								0.3333333333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 264284439197803,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
