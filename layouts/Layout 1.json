@@ -379,8 +379,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 152.39870804045628,
-						"y": 117.1561508178711,
+						"x": 57.050849710462884,
+						"y": -14.399754979208438,
 						"width": 18,
 						"height": 15,
 						"originX": 0.5,
@@ -426,12 +426,228 @@
 			"global": false
 		},
 		{
-			"name": "Layer 0",
+			"name": "HUD",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "shipsDestruidas",
+					"properties": {
+						"text": "score: 0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 8,
+					"sid": 971422402228047,
+					"tags": "",
+					"instanceVariables": {
+						"TXTscore": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 971422402228047,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 26.636038689216875,
+						"y": 94.22442580203551,
+						"width": 67.23715928735089,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "navesQueEscaparam",
+					"properties": {
+						"text": "escape: 0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 11,
+					"sid": 720982594744215,
+					"tags": "",
+					"instanceVariables": {
+						"TXTscape": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 720982594744215,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 26.015310626278335,
+						"y": 105.3282244417909,
+						"width": 59.51277582770592,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "gameOver",
+					"properties": {
+						"text": "game over",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 9,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 16,
+					"sid": 469650024883725,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 469650024883725,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 15.032256732834725,
+						"y": 62.11996516914907,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Texto",
+					"properties": {
+						"text": "press space key to start",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 5,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 14,
+					"sid": 571746962390937,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 571746962390937,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 10.445818863364536,
+						"y": 77.56860032376545,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "total",
 					"properties": {
 						"text": "Texto",
 						"enable-bbcode": true,
@@ -455,21 +671,21 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 8,
-					"sid": 971422402228047,
+					"uid": 17,
+					"sid": 237355588189965,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 971422402228047,
+						"sid": 237355588189965,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2.4973403778261485,
-						"y": 4.911242049889793,
-						"width": 200,
+						"x": 26.618731512042757,
+						"y": 116.67330249169562,
+						"width": 46.71926572266885,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -502,8 +718,8 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
@@ -511,7 +727,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": false
+			"global": true
 		}
 	],
 	"scene-graphs-folder-root": {

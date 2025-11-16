@@ -1,7 +1,7 @@
 {
-	"name": "Texto",
+	"name": "gameOver",
 	"plugin-id": "Text",
-	"sid": 910257870520314,
+	"sid": 781757832229562,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

@@ -48,6 +48,14 @@
 						"x": "48",
 						"y": "152"
 					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 574195784047446,
+					"parameters": {
+						"time-scale": "1.0"
+					}
 				}
 			],
 			"sid": 222752076719427
@@ -104,6 +112,14 @@
 					"parameters": {
 						"x": "nave2.X",
 						"y": "nave2.Y+1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "total",
+					"sid": 839642229477357,
+					"parameters": {
+						"text": "\"total: \" & score - navesQueEscaparam"
 					}
 				}
 			],
@@ -254,6 +270,16 @@
 			"sid": 357757683578106
 		},
 		{
+			"eventType": "comment",
+			"text": "nave inimigas",
+			"background-color": [
+				0.6274509803921569,
+				0.054901960784313725,
+				0.054901960784313725,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -275,6 +301,23 @@
 					"id": "destroy",
 					"objectClass": "tiro",
 					"sid": 994236235788703
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 932347921814841,
+					"parameters": {
+						"variable": "score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "shipsDestruidas",
+					"sid": 730660832061365,
+					"parameters": {
+						"text": "\"score: \" & score"
+					}
 				}
 			],
 			"sid": 438677096281045
@@ -298,16 +341,156 @@
 					"sid": 450279592481345
 				},
 				{
-					"id": "set-eventvar-value",
+					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 520117425936057,
+					"sid": 522878106852981,
 					"parameters": {
 						"variable": "navesQueEscaparam",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "navesQueEscaparam",
+					"sid": 944243885398033,
+					"parameters": {
+						"text": "\"escape: \" & navesQueEscaparam"
+					}
 				}
 			],
 			"sid": 981790623569975
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "nave2",
+					"sid": 423139786815115,
+					"parameters": {
+						"object": "nave"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "nave",
+					"sid": 766769806564165,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 788284075103216
+		},
+		{
+			"eventType": "comment",
+			"text": "configurar game over",
+			"background-color": [
+				0.9019607843137255,
+				0.7686274509803922,
+				0.9725490196078431,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "nave",
+					"sid": 456931564289214
+				}
+			],
+			"actions": [],
+			"sid": 331583964072245,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "nave",
+					"sid": 409487679168473,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "gameOver",
+					"sid": 515148013246338,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 606266864511532,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "navesQueEscaparam",
+					"sid": 461552971726713,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "shipsDestruidas",
+					"sid": 621458574093755,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto",
+					"sid": 403450621183335,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "total",
+					"sid": 766126227087522,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 783797049806546,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 677738378235207,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 693753070749942
+						}
+					],
+					"sid": 226168317427339
+				}
+			]
 		}
 	],
 	"sid": 442525077615115
