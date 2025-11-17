@@ -8,8 +8,29 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Botão",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Partículas",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -107,8 +128,15 @@
 			"shipsDestruidas",
 			"navesQueEscaparam",
 			"gameOver",
-			"Texto",
-			"total"
+			"pressAnyKey",
+			"total",
+			"explcaoNave",
+			"play",
+			"credit",
+			"back",
+			"CCDogEstelar",
+			"kevinMcload",
+			"Áudio"
 		],
 		"subfolders": []
 	},
@@ -122,7 +150,8 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"Layout 2"
+			"Layout 2",
+			"Layout 3"
 		],
 		"subfolders": []
 	},
@@ -237,7 +266,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.0.2.2",
+		"version": "0.1.0.5",
 		"autoIncrementVersion": false,
 		"author": "",
 		"authorEmail": "",
@@ -291,5 +320,5 @@
 	},
 	"viewportWidth": 90,
 	"viewportHeight": 160,
-	"firstLayout": null
+	"firstLayout": "Layout 2"
 }

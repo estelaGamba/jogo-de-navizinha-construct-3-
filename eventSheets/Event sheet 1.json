@@ -56,6 +56,14 @@
 					"parameters": {
 						"time-scale": "1.0"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gameOver",
+					"sid": 512096783892828,
+					"parameters": {
+						"text": "\"\""
+					}
 				}
 			],
 			"sid": 222752076719427
@@ -388,7 +396,39 @@
 					}
 				}
 			],
-			"sid": 788284075103216
+			"sid": 788284075103216,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 851780346739157,
+							"parameters": {
+								"object": "nave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 427675928279751,
+							"parameters": {
+								"object-to-create": "explcaoNave",
+								"layer": "1",
+								"x": "nave.X",
+								"y": "nave.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 158247148667024,
+					"disabled": true
+				}
+			]
 		},
 		{
 			"eventType": "comment",
@@ -418,11 +458,11 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
+					"id": "set-text",
 					"objectClass": "gameOver",
-					"sid": 515148013246338,
+					"sid": 672309095560345,
 					"parameters": {
-						"visibility": "visible"
+						"text": "\"game over\""
 					}
 				},
 				{
@@ -451,7 +491,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Texto",
+					"objectClass": "pressAnyKey",
 					"sid": 403450621183335,
 					"parameters": {
 						"visibility": "visible"
@@ -505,7 +545,56 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "gameOver",
+					"sid": 214877792555947,
+					"parameters": {
+						"text": "\"they escaped :c\""
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 796125543936161,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "navesQueEscaparam",
+					"sid": 680078468305179,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "shipsDestruidas",
+					"sid": 776254438665329,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "pressAnyKey",
+					"sid": 756991739607306,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "total",
+					"sid": 477980295961993,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
 			"sid": 693454529558389
 		}
 	],

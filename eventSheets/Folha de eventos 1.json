@@ -1,5 +1,69 @@
 {
 	"name": "Folha de eventos 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "credit",
+					"sid": 487985216528146
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 333291335271190,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 666153232015566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "play",
+					"sid": 605053694588886
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 568124485133674,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 789758591271535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "back",
+					"sid": 121255617946177
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 449441443777249,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 540655347850326
+		}
+	],
 	"sid": 794640557933441
 }

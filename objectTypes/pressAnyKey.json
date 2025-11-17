@@ -1,0 +1,10 @@
+{
+	"name": "pressAnyKey",
+	"plugin-id": "Text",
+	"sid": 910257870520314,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

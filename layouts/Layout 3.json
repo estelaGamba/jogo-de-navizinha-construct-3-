@@ -1,5 +1,5 @@
 {
-	"name": "Layout 2",
+	"name": "Layout 3",
 	"layers": [
 		{
 			"name": "Camada 0",
@@ -25,13 +25,13 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 13,
-					"sid": 298607706717872,
+					"uid": 21,
+					"sid": 856192498904955,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 298607706717872,
+						"sid": 856192498904955,
 						"expanded": true
 					},
 					"showing": true,
@@ -54,10 +54,10 @@
 					}
 				},
 				{
-					"type": "play",
+					"type": "back",
 					"properties": {
 						"type": "button",
-						"text": "play",
+						"text": "back",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -66,22 +66,22 @@
 						"id": "",
 						"class": ""
 					},
-					"uid": 19,
-					"sid": 633919612114208,
+					"uid": 22,
+					"sid": 916785080441935,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 633919612114208,
+						"sid": 916785080441935,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 25.544612823281113,
-						"y": 89.83474211147976,
+						"x": 26.210814948895717,
+						"y": 132.03666996719727,
 						"width": 39.43900697510729,
-						"height": 16.651274653183023,
+						"height": 13.146335658369095,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -93,34 +93,46 @@
 					}
 				},
 				{
-					"type": "credit",
+					"type": "CCDogEstelar",
 					"properties": {
-						"type": "button",
-						"text": "credit",
-						"tooltip": "",
+						"text": "progaming and art\nDogEstelar",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
+						"origin": "top-left",
+						"read-aloud": false
 					},
-					"uid": 20,
-					"sid": 873565286203364,
+					"uid": 23,
+					"sid": 588486985140915,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 873565286203364,
+						"sid": 588486985140915,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 25.194531580534175,
-						"y": 113.31770470292301,
-						"width": 39.43900697510729,
-						"height": 17.35226245214581,
+						"x": 3,
+						"y": 40.27096809140255,
+						"width": 85.29290562427161,
+						"height": 25.22053773434463,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -128,11 +140,66 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "kevinMcload",
+					"properties": {
+						"text": "muisc\nMesmerizing Galaxy\nby Kevin Mccloud",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 24,
+					"sid": 498996226389070,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 498996226389070,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -6,
+						"y": 76.14024838311578,
+						"width": 99.63129242123765,
+						"height": 44.019755979255706,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
-			"sid": 418662595998730,
+			"sid": 515152425871754,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -166,7 +233,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 129472452368497,
+	"sid": 688574750835730,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 90,

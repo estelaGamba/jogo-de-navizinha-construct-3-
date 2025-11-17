@@ -527,7 +527,7 @@
 						"x": 26.015310626278335,
 						"y": 105.3282244417909,
 						"width": 59.51277582770592,
-						"height": 30,
+						"height": 10.689041350887422,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -579,8 +579,8 @@
 					"world": {
 						"x": 15.032256732834725,
 						"y": 62.11996516914907,
-						"width": 200,
-						"height": 30,
+						"width": 72.54767291585688,
+						"height": 18.172037827418535,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -594,7 +594,7 @@
 					}
 				},
 				{
-					"type": "Texto",
+					"type": "pressAnyKey",
 					"properties": {
 						"text": "press space key to start",
 						"enable-bbcode": true,
@@ -632,7 +632,7 @@
 					"world": {
 						"x": 10.687205846478435,
 						"y": 77.32721334065155,
-						"width": 200,
+						"width": 77.616799561249,
 						"height": 15.034007046937745,
 						"originX": 0,
 						"originY": 0,
@@ -689,6 +689,60 @@
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "explcaoNave",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"initially-visible": true,
+						"live-preview": false,
+						"speed": 200,
+						"size": 32,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 1
+					},
+					"uid": 15,
+					"sid": 125051637910499,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 125051637910499,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 142.00195267424283,
+						"y": 301.3344050881972,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
