@@ -22,6 +22,101 @@
 			"sid": 533760895833182
 		},
 		{
+			"eventType": "comment",
+			"text": "menus",
+			"text-color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"background-color": [
+				0.7647058823529411,
+				0.27450980392156865,
+				0.7254901960784313,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "credit",
+					"sid": 835158750008729
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 421296219347776,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 863519387560532
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "play",
+					"sid": 247728625323032
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 167629866070096,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 534290862340114
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "back",
+					"sid": 256952506767089
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 437029865786522,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 686918738371061
+		},
+		{
+			"eventType": "comment",
+			"text": "jogo",
+			"text-color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"background-color": [
+				0.7647058823529411,
+				0.27450980392156865,
+				0.7254901960784313,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -63,6 +158,18 @@
 					"sid": 512096783892828,
 					"parameters": {
 						"text": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 302162648306369,
+					"parameters": {
+						"audio-file": "Mesmerizing Galaxy Loop",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -513,9 +620,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "key-is-down",
+							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 677738378235207,
+							"sid": 926641468652521,
 							"parameters": {
 								"key": 32
 							}
@@ -607,9 +714,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "key-is-down",
+							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 223177183034955,
+							"sid": 645455632755900,
 							"parameters": {
 								"key": 32
 							}
