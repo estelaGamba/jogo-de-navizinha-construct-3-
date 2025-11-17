@@ -116,10 +116,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "nave2",
-					"sid": 989098291193374,
+					"sid": 956369663075816,
 					"parameters": {
 						"x": "nave2.X",
-						"y": "nave2.Y+1"
+						"y": "nave2.Y+0.5"
 					}
 				},
 				{
@@ -366,9 +366,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "navesQueEscaparam",
-					"sid": 944243885398033,
+					"sid": 431321988356026,
 					"parameters": {
-						"text": "\"escape: \" & navesQueEscaparam"
+						"text": "\"ships escaped: \" & navesQueEscaparam"
 					}
 				}
 			],
@@ -394,41 +394,28 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 442461668695232,
+					"disabled": true
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 318547581383690,
+					"parameters": {
+						"object-to-create": "explcaoNave",
+						"layer": "1",
+						"x": "nave.X",
+						"y": "nave.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
-			"sid": 788284075103216,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 851780346739157,
-							"parameters": {
-								"object": "nave"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 427675928279751,
-							"parameters": {
-								"object-to-create": "explcaoNave",
-								"layer": "1",
-								"x": "nave.X",
-								"y": "nave.Y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 158247148667024,
-					"disabled": true
-				}
-			]
+			"sid": 788284075103216
 		},
 		{
 			"eventType": "comment",
@@ -457,6 +444,20 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 326912660374757
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 369874009797673,
+					"parameters": {
+						"seconds": "0.5",
+						"use-timescale": true
+					}
+				},
 				{
 					"id": "set-text",
 					"objectClass": "gameOver",
@@ -547,6 +548,11 @@
 			],
 			"actions": [
 				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 890477566880102
+				},
+				{
 					"id": "set-text",
 					"objectClass": "gameOver",
 					"sid": 214877792555947,
@@ -595,7 +601,30 @@
 					}
 				}
 			],
-			"sid": 693454529558389
+			"sid": 693454529558389,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 223177183034955,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 868300121852156
+						}
+					],
+					"sid": 271057689705771
+				}
+			]
 		}
 	],
 	"sid": 442525077615115

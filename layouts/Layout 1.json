@@ -488,7 +488,7 @@
 				{
 					"type": "navesQueEscaparam",
 					"properties": {
-						"text": "escape: 0",
+						"text": "ships escaped: 0",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 6,
@@ -524,9 +524,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 26.015310626278335,
+						"x": 17.083992251063762,
 						"y": 105.3282244417909,
-						"width": 59.51277582770592,
+						"width": 68.4440942029205,
 						"height": 10.689041350887422,
 						"originX": 0,
 						"originY": 0,
@@ -561,7 +561,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": false,
+						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -702,7 +702,7 @@
 				{
 					"type": "explcaoNave",
 					"properties": {
-						"rate": 50,
+						"rate": 10,
 						"spray-cone": 360,
 						"type": "one-shot",
 						"object": -1,
@@ -723,7 +723,7 @@
 						"life-speed-randomiser": 800,
 						"opacity-randomiser": 0,
 						"destroy-mode": "fade-to-invisible",
-						"timeout": 1
+						"timeout": 0.4
 					},
 					"uid": 15,
 					"sid": 125051637910499,
@@ -737,10 +737,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 142.00195267424283,
-						"y": 301.3344050881972,
-						"width": 100,
-						"height": 100,
+						"x": 145.90032597190785,
+						"y": 296.76614319295413,
+						"width": 65.20409286375488,
+						"height": 65.20409286375488,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [

@@ -172,7 +172,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Mesmerizing Galaxy Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 457851651763780,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
@@ -266,7 +275,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.1.0.5",
+		"version": "0.1.0.7",
 		"autoIncrementVersion": false,
 		"author": "",
 		"authorEmail": "",
