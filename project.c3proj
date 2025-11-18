@@ -43,13 +43,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Fonte de sprites",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Text",
 			"name": "Texto",
 			"author": "Scirra",
@@ -124,7 +117,6 @@
 			"Teclado",
 			"PlanoDeFundoEmBlocos",
 			"nave2",
-			"FonteDeSprites",
 			"shipsDestruidas",
 			"navesQueEscaparam",
 			"gameOver",
@@ -136,7 +128,8 @@
 			"back",
 			"CCDogEstelar",
 			"kevinMcload",
-			"Áudio"
+			"Áudio",
+			"meteoro"
 		],
 		"subfolders": []
 	},
@@ -157,8 +150,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Folha de eventos 1"
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -275,7 +267,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.1.0.7",
+		"version": "0.2.1.3",
 		"autoIncrementVersion": false,
 		"author": "",
 		"authorEmail": "",

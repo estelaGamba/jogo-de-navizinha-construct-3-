@@ -394,6 +394,47 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "meteoro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"sid": 705235954141960,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"DestruirForaDoLayout": {
+							"properties": {}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 705235954141960,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 77.00631831928635,
+						"y": 36.87237112128024,
+						"width": 11.485300167727534,
+						"height": 13.48274367515841,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 865347947786249,
@@ -577,8 +618,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 15.032256732834725,
-						"y": 62.11996516914907,
+						"x": 17.687513547087704,
+						"y": 62.60273913537689,
 						"width": 72.54767291585688,
 						"height": 18.172037827418535,
 						"originX": 0,
@@ -683,7 +724,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 26.618731512042757,
+						"x": 28.791214360067926,
 						"y": 116.67330249169562,
 						"width": 59.27138884459204,
 						"height": 10.930428334001334,

@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "score",
+			"name": "naveDestruidas",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -128,15 +128,6 @@
 			"actions": [
 				{
 					"id": "set-position",
-					"objectClass": "nave",
-					"sid": 956554012787934,
-					"parameters": {
-						"x": "jogador.X",
-						"y": "jogador.Y"
-					}
-				},
-				{
-					"id": "set-position",
 					"objectClass": "jogador",
 					"sid": 503546112807060,
 					"parameters": {
@@ -234,7 +225,7 @@
 					"objectClass": "total",
 					"sid": 843097888408359,
 					"parameters": {
-						"text": "\"score: \" & score - navesQueEscaparam"
+						"text": "\"score: \" & naveDestruidas - navesQueEscaparam"
 					}
 				}
 			],
@@ -312,34 +303,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 908922368010191,
-					"parameters": {
-						"interval-seconds": "2.5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "gerador",
-					"sid": 291715082497009,
-					"parameters": {
-						"object": "nave2",
-						"layer": "1",
-						"image-point": "0",
-						"create-hierarchy": true,
-						"template-name": "\"\""
-					}
-				}
-			],
-			"sid": 567333515509051
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "key-is-down",
 					"objectClass": "Teclado",
 					"sid": 112450780654439,
@@ -401,6 +364,42 @@
 			]
 		},
 		{
+			"eventType": "comment",
+			"text": "colocar mais inimigos\ntalvez meteoros"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 605140805477670,
+					"parameters": {
+						"interval-seconds": "2.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "gerador",
+					"sid": 230548426131015,
+					"parameters": {
+						"object": "nave2",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 212474940687291
+		},
+		{
+			"eventType": "comment",
+			"text": "talvez colocar particulas ao destruir inimigos"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -428,7 +427,7 @@
 					"objectClass": "System",
 					"sid": 932347921814841,
 					"parameters": {
-						"variable": "score",
+						"variable": "naveDestruidas",
 						"value": "1"
 					}
 				},
@@ -437,7 +436,7 @@
 					"objectClass": "shipsDestruidas",
 					"sid": 343252005671103,
 					"parameters": {
-						"text": "\"ships destroyed: \" & score"
+						"text": "\"ships destroyed: \" & naveDestruidas"
 					}
 				}
 			],
@@ -487,9 +486,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "nave2",
-					"sid": 423139786815115,
+					"sid": 618402830968892,
 					"parameters": {
-						"object": "nave"
+						"object": "jogador"
 					}
 				}
 			],
@@ -526,7 +525,106 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "configurar game over",
+			"text": "meteoros",
+			"text-color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"background-color": [
+				0.5294117647058824,
+				0.49411764705882355,
+				0.3686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 943658895600418,
+					"parameters": {
+						"variable": "naveDestruidas",
+						"comparison": 5,
+						"value": "15"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 112333938313051,
+					"parameters": {
+						"interval-seconds": "2.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "gerador",
+					"sid": 171707988431108,
+					"parameters": {
+						"object": "meteoro",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 129258976095397
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 717635515050159,
+					"parameters": {
+						"interval-seconds": "0.3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "meteoro",
+					"sid": 251812323854835,
+					"parameters": {
+						"degrees": "36"
+					}
+				}
+			],
+			"sid": 721088397609063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "meteoro",
+					"sid": 976174796610087,
+					"parameters": {
+						"object": "sensor"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "meteoro",
+					"sid": 355310234324864
+				}
+			],
+			"sid": 105618145913912
+		},
+		{
+			"eventType": "comment",
+			"text": "game over",
 			"text-color": [
 				0.4196078431372549,
 				0.4196078431372549,
