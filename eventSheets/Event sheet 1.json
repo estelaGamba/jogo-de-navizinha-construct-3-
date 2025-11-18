@@ -227,6 +227,15 @@
 					"parameters": {
 						"text": "\"score: \" & naveDestruidas - navesQueEscaparam"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "meteoro",
+					"sid": 632923938301421,
+					"parameters": {
+						"x": "meteoro.X",
+						"y": "meteoro.Y+0.5"
+					}
 				}
 			],
 			"sid": 846742353697839
@@ -377,6 +386,12 @@
 					"parameters": {
 						"interval-seconds": "2.5"
 					}
+				},
+				{
+					"id": "is-outside-layout",
+					"objectClass": "gerador",
+					"sid": 540227168832869,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -486,7 +501,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "nave2",
-					"sid": 618402830968892,
+					"sid": 659894454641845,
 					"parameters": {
 						"object": "jogador"
 					}
@@ -496,7 +511,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "nave",
-					"sid": 766769806564165,
+					"sid": 595157703546518,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -504,13 +519,13 @@
 				{
 					"id": "destroy",
 					"objectClass": "nave2",
-					"sid": 442461668695232,
+					"sid": 609818914662728,
 					"disabled": true
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 318547581383690,
+					"sid": 307662335196343,
 					"parameters": {
 						"object-to-create": "explcaoNave",
 						"layer": "1",
@@ -521,11 +536,11 @@
 					}
 				}
 			],
-			"sid": 788284075103216
+			"sid": 539875311828060
 		},
 		{
 			"eventType": "comment",
-			"text": "meteoros",
+			"text": "nivel 2 meteoros",
 			"text-color": [
 				1,
 				1,
@@ -555,10 +570,16 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 112333938313051,
+					"sid": 438857132719026,
 					"parameters": {
-						"interval-seconds": "2.5"
+						"interval-seconds": "2.3"
 					}
+				},
+				{
+					"id": "is-outside-layout",
+					"objectClass": "gerador",
+					"sid": 756863525991211,
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -606,6 +627,32 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
+					"objectClass": "tiro",
+					"sid": 230026912868874,
+					"parameters": {
+						"object": "meteoro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "meteoro",
+					"sid": 638099992516545
+				},
+				{
+					"id": "destroy",
+					"objectClass": "tiro",
+					"sid": 300919079241575
+				}
+			],
+			"sid": 687088003843692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
 					"objectClass": "meteoro",
 					"sid": 976174796610087,
 					"parameters": {
@@ -621,6 +668,53 @@
 				}
 			],
 			"sid": 105618145913912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "meteoro",
+					"sid": 977534111371518,
+					"parameters": {
+						"object": "jogador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "nave",
+					"sid": 976636207621452,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 130759322970851,
+					"disabled": true
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 483488731196389,
+					"parameters": {
+						"object-to-create": "explcaoNave",
+						"layer": "1",
+						"x": "nave.X",
+						"y": "nave.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 267750245157383
+		},
+		{
+			"eventType": "comment",
+			"text": "nivel 3 mais inimigos\naqui pensei em o jogo criar outro gerador\nna possição 75, 6"
 		},
 		{
 			"eventType": "comment",
@@ -653,6 +747,11 @@
 					"id": "destroy",
 					"objectClass": "nave2",
 					"sid": 326912660374757
+				},
+				{
+					"id": "destroy",
+					"objectClass": "meteoro",
+					"sid": 308462475872496
 				},
 				{
 					"id": "wait",
@@ -803,6 +902,14 @@
 					"sid": 477980295961993,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "lock-keyboard",
+					"objectClass": "Teclado",
+					"sid": 200110635135179,
+					"parameters": {
+						"keys": "\"KeyW,KeyA,KeyS,KeyD\""
 					}
 				}
 			],
