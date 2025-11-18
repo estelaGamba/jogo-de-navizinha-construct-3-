@@ -236,6 +236,15 @@
 						"x": "meteoro.X",
 						"y": "meteoro.Y+0.5"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "nave3",
+					"sid": 414519679640299,
+					"parameters": {
+						"x": "nave3.X",
+						"y": "nave3.Y+1.2"
+					}
 				}
 			],
 			"sid": 846742353697839
@@ -714,7 +723,182 @@
 		},
 		{
 			"eventType": "comment",
+			"text": "nave inimiga 2 essa apenas corre reto",
+			"text-color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"background-color": [
+				0.4196078431372549,
+				0.19607843137254902,
+				0.4666666666666667,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 231621815003022,
+					"parameters": {
+						"variable": "naveDestruidas",
+						"comparison": 5,
+						"value": "20"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 508209473083272,
+					"parameters": {
+						"interval-seconds": "3.3"
+					}
+				},
+				{
+					"id": "is-outside-layout",
+					"objectClass": "gerador",
+					"sid": 926800955371195,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "gerador",
+					"sid": 591736249936051,
+					"parameters": {
+						"object": "nave3",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 503642587243439
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "nave3",
+					"sid": 283736817733990,
+					"parameters": {
+						"object": "jogador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "nave",
+					"sid": 956235742635213,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nave2",
+					"sid": 688029060615324,
+					"disabled": true
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 144842436497497,
+					"parameters": {
+						"object-to-create": "explcaoNave",
+						"layer": "1",
+						"x": "nave.X",
+						"y": "nave.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 163967708064066
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "tiro",
+					"sid": 758341215996219,
+					"parameters": {
+						"object": "nave3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "nave3",
+					"sid": 614767259006300
+				},
+				{
+					"id": "destroy",
+					"objectClass": "tiro",
+					"sid": 899699583759154
+				}
+			],
+			"sid": 658855226149872
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "nave3",
+					"sid": 679847524329613,
+					"parameters": {
+						"object": "sensor"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "nave3",
+					"sid": 100057909410352
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 397354034249687,
+					"parameters": {
+						"variable": "navesQueEscaparam",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "navesQueEscaparam",
+					"sid": 845731676878625,
+					"parameters": {
+						"text": "\"ships escaped: \" & navesQueEscaparam"
+					}
+				}
+			],
+			"sid": 946911788350566
+		},
+		{
+			"eventType": "comment",
 			"text": "nivel 3 mais inimigos\naqui pensei em o jogo criar outro gerador\nna possição 75, 6"
+		},
+		{
+			"eventType": "comment",
+			"text": "ideia para proxima fase, um metorosao que quando destroi cria mini meteoros"
+		},
+		{
+			"eventType": "comment",
+			"text": "idieia 3 (acho que esse consigo fazer no construct free)\numa nave que apenas anda para os lados e atira\nela demora pra spawnar a cada 30 a 10 segundos"
 		},
 		{
 			"eventType": "comment",
@@ -747,6 +931,11 @@
 					"id": "destroy",
 					"objectClass": "nave2",
 					"sid": 326912660374757
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nave3",
+					"sid": 560063390568332
 				},
 				{
 					"id": "destroy",

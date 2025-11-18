@@ -1,0 +1,156 @@
+{
+	"name": "nave3",
+	"plugin-id": "Sprite",
+	"sid": 491671920193629,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "bound",
+			"name": "RestritoAoLayout",
+			"sid": 947421827009169
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Senóide",
+			"sid": 615679843308411
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestruirForaDoLayout",
+			"sid": 875086437067900
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 18,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.4666666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4950505,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.1372872872872873,
+								1,
+								0.13128128128128122,
+								1,
+								0.9387887887887886,
+								0,
+								0.931581581581581
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ponto do tiro 1",
+								"x": 0.1111111111111111,
+								"y": 0.9333333333333333
+							},
+							{
+								"name": "ponto de tiro 2",
+								"x": 0.8888888888888888,
+								"y": 0.9333333333333333
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 18,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.4666666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5827616,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.1297006684103458,
+								1,
+								0.1405405405405405,
+								1,
+								0.9369369369369368,
+								0,
+								0.936898188511091
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ponto do tiro 1",
+								"x": 0.1111111111111111,
+								"y": 0.9333333333333333
+							},
+							{
+								"name": "ponto de tiro 2",
+								"x": 0.8888888888888888,
+								"y": 0.9333333333333333
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 18,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.4666666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3307094,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.12790855371500529,
+								1,
+								0.13695631114985948,
+								1,
+								0.9315605928509154,
+								0,
+								0.9261455003390482
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ponto do tiro 1",
+								"x": 0.1111111111111111,
+								"y": 0.9333333333333333
+							},
+							{
+								"name": "ponto de tiro 2",
+								"x": 0.8888888888888888,
+								"y": 0.9333333333333333
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 599620362932168,
+				"name": "idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

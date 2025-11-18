@@ -129,7 +129,9 @@
 			"CCDogEstelar",
 			"kevinMcload",
 			"Áudio",
-			"meteoro"
+			"meteoro",
+			"nave3",
+			"tiro2"
 		],
 		"subfolders": []
 	},
@@ -267,9 +269,9 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.2.2.0",
+		"version": "0.2.3.4",
 		"autoIncrementVersion": false,
-		"author": "",
+		"author": "estelaThe_G",
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
