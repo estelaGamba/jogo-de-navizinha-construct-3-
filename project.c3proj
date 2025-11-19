@@ -131,7 +131,8 @@
 			"Áudio",
 			"meteoro",
 			"nave3",
-			"tiro2"
+			"tiro2",
+			"nave4"
 		],
 		"subfolders": []
 	},
@@ -269,7 +270,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.2.3.4",
+		"version": "0.2.3.5",
 		"autoIncrementVersion": false,
 		"author": "estelaThe_G",
 		"authorEmail": "",

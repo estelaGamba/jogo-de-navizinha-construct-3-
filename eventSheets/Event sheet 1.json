@@ -240,10 +240,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "nave3",
-					"sid": 414519679640299,
+					"sid": 186742570257315,
 					"parameters": {
 						"x": "nave3.X",
-						"y": "nave3.Y+1.2"
+						"y": "nave3.Y+1.1"
 					}
 				}
 			],

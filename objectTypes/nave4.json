@@ -1,7 +1,7 @@
 {
-	"name": "nave3",
+	"name": "nave4",
 	"plugin-id": "Sprite",
-	"sid": 491671920193629,
+	"sid": 412574542862316,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,17 +9,17 @@
 		{
 			"behaviorId": "bound",
 			"name": "RestritoAoLayout",
-			"sid": 947421827009169
+			"sid": 284575637463492
 		},
 		{
 			"behaviorId": "Sin",
 			"name": "Senóide",
-			"sid": 615679843308411
+			"sid": 642731084087592
 		},
 		{
 			"behaviorId": "destroy",
 			"name": "DestruirForaDoLayout",
-			"sid": 875086437067900
+			"sid": 864511859022954
 		}
 	],
 	"effectTypes": [],
@@ -29,62 +29,24 @@
 				"frames": [
 					{
 						"width": 18,
-						"height": 18,
+						"height": 15,
 						"originX": 0.5,
 						"originY": 0.4666666666666667,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6744379,
+						"imageSpriteId": 2493873,
 						"collisionPoly": {
 							"points": [
-								0,
-								0.1372872872872873,
-								1,
-								0.13128128128128122,
-								1,
-								0.9387887887887886,
-								0,
-								0.931581581581581
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "ponto do tiro 1",
-								"x": 0.1111111111111111,
-								"y": 0.9333333333333333
-							},
-							{
-								"name": "ponto de tiro 2",
-								"x": 0.8888888888888888,
-								"y": 0.9333333333333333
-							}
-						],
-						"duration": 1,
-						"tag": ""
-					},
-					{
-						"width": 18,
-						"height": 18,
-						"originX": 0.5,
-						"originY": 0.4666666666666667,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 290584,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.1297006684103458,
-								1,
+								0.07957957957957967,
+								0.12432432432432433,
+								0.9354354354354358,
 								0.1405405405405405,
-								1,
+								0.8948948948948948,
 								0.9369369369369368,
-								0,
-								0.936898188511091
+								0.09609609609609611,
+								0.9297297297297291
 							]
 						},
 						"useCollisionPoly": true,
@@ -105,24 +67,78 @@
 					},
 					{
 						"width": 18,
-						"height": 18,
+						"height": 15,
 						"originX": 0.5,
 						"originY": 0.4666666666666667,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4948218,
+						"imageSpriteId": 1043690,
 						"collisionPoly": {
 							"points": [
-								0,
-								0.12790855371500529,
-								1,
-								0.13695631114985948,
-								1,
-								0.9315605928509154,
-								0,
-								0.9261455003390482
+								0.05555555555555555,
+								0.5333333333333333,
+								0.2777777777777778,
+								0.33333333333333337,
+								0.5555555555555556,
+								0.19999999999999996,
+								0.8333333333333334,
+								0.2666666666666667,
+								0.8888888888888888,
+								0.5333333333333333,
+								0.8333333333333334,
+								0.8666666666666667,
+								0.5555555555555556,
+								0.8666666666666667,
+								0.3333333333333333,
+								0.7333333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ponto do tiro 1",
+								"x": 0.1111111111111111,
+								"y": 0.9333333333333333
+							},
+							{
+								"name": "ponto de tiro 2",
+								"x": 0.8888888888888888,
+								"y": 0.9333333333333333
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 18,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.4666666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2390882,
+						"collisionPoly": {
+							"points": [
+								0.05555555555555555,
+								0.5333333333333333,
+								0.2777777777777778,
+								0.33333333333333337,
+								0.5555555555555556,
+								0.19999999999999996,
+								0.8333333333333334,
+								0.2666666666666667,
+								0.8888888888888888,
+								0.5333333333333333,
+								0.8333333333333334,
+								0.8666666666666667,
+								0.5555555555555556,
+								0.8666666666666667,
+								0.3333333333333333,
+								0.7333333333333334
 							]
 						},
 						"useCollisionPoly": true,
@@ -142,7 +158,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 599620362932168,
+				"sid": 574578267016243,
 				"name": "idle",
 				"isLooping": true,
 				"isPingPong": false,

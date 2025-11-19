@@ -45,8 +45,8 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 119.3109586491126,
-						"height": 160.58813276159077,
+						"width": 119,
+						"height": 160,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -426,6 +426,66 @@
 						"height": 13.48274367515841,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "nave4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"sid": 116813624659661,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"RestritoAoLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Senóide": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"DestruirForaDoLayout": {
+							"properties": {}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 116813624659661,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 53.21428298950195,
+						"y": 17.96424102783203,
+						"width": 18,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.4666666666666667,
 						"color": [
 							1,
 							1,
