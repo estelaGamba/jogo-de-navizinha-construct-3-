@@ -743,11 +743,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 231621815003022,
+					"sid": 576057475339993,
 					"parameters": {
 						"variable": "naveDestruidas",
 						"comparison": 5,
-						"value": "20"
+						"value": "10"
 					}
 				},
 				{
@@ -903,6 +903,51 @@
 				0.3803921568627451,
 				1
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 537834212108031,
+					"parameters": {
+						"variable": "naveDestruidas",
+						"comparison": 5,
+						"value": "2"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 504144023513157,
+					"parameters": {
+						"interval-seconds": "10"
+					}
+				},
+				{
+					"id": "is-outside-layout",
+					"objectClass": "gerador",
+					"sid": 484380033655721,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "gerador",
+					"sid": 785845116812398,
+					"parameters": {
+						"object": "nave4",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 610168766791829,
+			"disabled": true
 		},
 		{
 			"eventType": "comment",
