@@ -132,7 +132,8 @@
 			"meteoro",
 			"nave3",
 			"tiro2",
-			"nave4"
+			"nave4",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -270,7 +271,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.2.3.5",
+		"version": "0.2.5.0",
 		"autoIncrementVersion": false,
 		"author": "estelaThe_G",
 		"authorEmail": "",
@@ -322,7 +323,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 90,
+	"viewportWidth": 160,
 	"viewportHeight": 160,
 	"firstLayout": "Layout 2"
 }

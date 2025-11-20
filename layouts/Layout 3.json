@@ -25,6 +25,53 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
+					"uid": 27,
+					"sid": 877603820112754,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 877603820112754,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 89.90869509496682,
+						"y": 0,
+						"width": 90,
+						"height": 160,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "espaco",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
 					"uid": 21,
 					"sid": 856192498904955,
 					"tags": "",
@@ -78,8 +125,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 26.210814948895717,
-						"y": 132.03666996719727,
+						"x": 67.34828393102674,
+						"y": 130.7643771120798,
 						"width": 39.43900697510729,
 						"height": 16.01401301776231,
 						"originX": 0,
@@ -129,8 +176,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 3,
-						"y": 40.27096809140255,
+						"x": 43.71337136375857,
+						"y": 41.54326094652001,
 						"width": 85.29290562427161,
 						"height": 25.22053773434463,
 						"originX": 0,
@@ -182,8 +229,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -6,
-						"y": 76.14024838311578,
+						"x": 35.56156660050351,
+						"y": 76.56434600148826,
 						"width": 99.63129242123765,
 						"height": 44.019755979255706,
 						"originX": 0,
