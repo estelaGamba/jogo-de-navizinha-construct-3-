@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 45802,
+	"savedWithRelease": 47603,
 	"name": "jogo de navinha",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -86,7 +86,7 @@
 		{
 			"type": "behavior",
 			"id": "destroy",
-			"name": "Destruir fora do layout",
+			"name": "Destruir externamente",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -269,6 +269,10 @@
 		"items": [],
 		"subfolders": []
 	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "",
 		"version": "0.2.5.0",
@@ -308,6 +312,7 @@
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
+		"fixedFramerate": 30,
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",

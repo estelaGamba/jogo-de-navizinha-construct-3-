@@ -156,11 +156,22 @@
 					"objectClass": "Áudio",
 					"sid": 302162648306369,
 					"parameters": {
-						"audio-file": "Mesmerizing Galaxy Loop",
+						"audio-file": {
+							"path": "Mesmerizing Galaxy Loop"
+						},
 						"loop": "looping",
 						"volume": "-10",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 979745064274127,
+					"parameters": {
+						"variable": "navesQueEscaparam",
+						"value": "0"
 					}
 				}
 			],
@@ -1092,7 +1103,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 798915302878112,
+					"sid": 760331849960102,
 					"parameters": {
 						"variable": "navesQueEscaparam",
 						"comparison": 0,
